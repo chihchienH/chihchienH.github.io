@@ -1,0 +1,103 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,700;1,300;1,600&display=swap');
+@import url('main_rwd.css');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Verdana, Geneva, sans-serif, '微軟正黑體';
+  font-family: 'Spectral', serif;
+}
+
+/* //////header////// */
+header {
+  position: relative;
+  padding: 15px 0px;
+  color: #fff;
+  background: #063;
+  text-align: center;
+  .menu {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url(../images/menu.png);
+    right: 20px;
+    top: 20px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+/* //////nav////// */
+nav {
+  margin: auto;
+  background: #900;
+  text-align: center;
+  display: none;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      display: block;
+      border-bottom: solid #fff 1px;
+      a {
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        width: 100%;
+        padding: 15px 30px;
+        &:hover {
+          background: #c90;
+        }
+      }
+    }
+  }
+}
+
+/* //////div.row////// */
+p {
+  padding: 10px;
+  background: #ccc;
+}
+
+#imgbox img {
+  float: left;
+  width: 100%;
+  padding: 5px;
+}
+
+/* //////footer////// */
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+/*///rwd///*/
+@media only screen and (min-width: 768px) {
+  header .menu {
+    display: none;
+  }
+  nav {
+    display: block; //show the nav
+  }
+  nav ul li {
+    display: inline-block;
+    border-bottom: 0px;
+  }
+  #imgbox img {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #imgbox img {
+    width: 33.33%;
+  }
+}

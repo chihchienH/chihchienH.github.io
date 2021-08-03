@@ -1,0 +1,141 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+main {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: stretch;
+          align-items: stretch;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  /*header*/
+  /*nav*/
+  /*aside*/
+  /*section*/
+  /*footer*/
+}
+
+main header {
+  width: 100%;
+  background: #c0c0b0;
+  text-align: center;
+  padding: 20px;
+}
+
+main nav {
+  background: #468263;
+  width: 100%;
+  text-align: center;
+}
+
+main nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+main nav ul a {
+  display: block;
+  padding: 10px 30px;
+  border-bottom: solid 1px #fff;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+main nav ul a:hover {
+  background: #fff;
+  color: #468263;
+}
+
+main aside {
+  width: 100%;
+  background: #c0c0b0;
+}
+
+main aside img {
+  width: 100%;
+}
+
+main section {
+  width: 100%;
+  color: #fff;
+  background: #731509;
+  line-height: 2em;
+}
+
+main section p {
+  box-sizing: border-box;
+  padding: 10px 30px;
+}
+
+main footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  main nav {
+    margin-bottom: 10px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-items: center;
+            align-items: center;
+  }
+  main nav ul li {
+    float: left;
+  }
+  main nav ul li a {
+    border-bottom: solid 0px #fff;
+  }
+  main aside {
+    -webkit-flex: 0.4 300px;
+            flex: 0.4 300px;
+  }
+  main section {
+    -webkit-flex: 0.6 300px;
+            flex: 0.6 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main nav {
+    -webkit-flex: 1;
+            flex: 1;
+    padding: 10px;
+    margin-bottom: 0px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-items: center;
+            align-items: center;
+  }
+  main nav ul {
+    -webkit-align-self: flex-start;
+            align-self: flex-start;
+    width: 100%;
+    padding: 20px;
+  }
+  main nav ul li {
+    float: none;
+    display: block;
+    border-bottom: solid 1px #fff;
+  }
+  main aside {
+    -webkit-flex: 1;
+            flex: 1;
+  }
+  section {
+    -webkit-flex: 2;
+            flex: 2;
+  }
+}
+/*# sourceMappingURL=flex.css.map */

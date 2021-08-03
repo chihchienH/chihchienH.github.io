@@ -1,0 +1,111 @@
+<!-- viewBox same size with width height -->
+<svg width="8" height="2893" viewBox="0 0 8 2893">
+  <defs>
+    <style>
+      .timeline-bg {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <rect class="timeline-bg" width="6" height="2891" />
+</svg>
+
+<svg width="26" height="26" viewBox="0 0 26 26">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="svg.timeline-node_inactive">
+    <circle id="Ellipse_4" class="cls-1" cx="12" cy="12" r="12" />
+  </g>
+</svg>
+
+<svg class="arrow">
+  <a href="" class="arrow-link"></a>
+  <path class="arrow-top" d="M23.82,11.57,13.57,1.19h0a1.5,1.5,0,0,0-2.12,0h0L1.18,11.57a1.5,1.5,0,0,0,2.14,2.11L11,5.9V37.75a1.5,1.5,0,0,0,3,0V5.9l7.68,7.78a1.53,1.53,0,0,0,1.07.44,1.48,1.48,0,0,0,1.05-.43A1.5,1.5,0,0,0,23.82,11.57Z"/>
+</svg>
+
+<svg class="arrow-right" viewBox="0 0 56 22.45">
+  <path class="arrow-right-path" d="M50.15,22.81,60.06,13h0a1.45,1.45,0,0,0,0-2h0L50.15,1.19a1.44,1.44,0,1,0-2,2l7.43,7.34H6a1.43,1.43,0,0,0,0,2.86H55.56l-7.43,7.34a1.47,1.47,0,0,0-.43,1,1.42,1.42,0,0,0,.42,1A1.44,1.44,0,0,0,50.15,22.81Z"/>
+</svg>
+
+
+
+<!-- forEach timeline-article, check json -->
+<!-- JS: .active(at first) *done-->
+<article class="post" data-filter="">
+  <!-- JS: .passthrough .highlight -->
+  <!-- JS: .css fill -->
+  <svg class="node">
+    <circle class="node-circle" cx="0" cy="0" r="12" />
+  </svg>
+  <!-- content-wrapper -->
+  <!-- JS: .passthrough .highlight -->
+  <div class="post-content-wrapper">
+    <h3 class="post-title"><span></span></h3>
+    <!-- content-container, click to show -->
+    <div class="content-container display-none">
+      <div class="content-img">
+        <img src="" alt="" />
+        <figcaption></figcaption>
+      </div>
+      <div class="content-quote"></div>
+    </div>
+  </div>
+</article>
+
+
+<a href="" class="item" data-type="">
+  <div class="item-img">
+    <div class="item-img-inner"></div>
+  </div>
+  <div class="item-text">
+    <h3 class="item-title"></h3>
+  </div>
+  <div class="item-hidden">
+    <ul class="item-hidden-info">
+      <li class="info-completion"><span></span></li>
+      <li class="info-location"><span></span></li>
+      <li class="area"><span></span></li>
+    </ul>
+  </div>
+  <div class="item-hidden-arrow"></div>
+</a>
+
+<script>
+  // let article = `<article class="post" data-filter= "${dataArray.type}"`;
+  // article += `<svg class="node"><circle class="node-circle" cx="0" cy="0" r="12"/></svg>`;
+  // article += `<div class="post-content-wrapper">`;
+  // article += `<h3 class="post-title">${dataArray.title}</h3>`;
+  // article += `<div class="content-container display-none">`;
+  // article += `<div class="content-img">`;
+  // article += `<img src="${dataArray.img}"/>`;
+  // article += `<figcaption>${dataArray.fig}</figcaption>`;
+  // article += `</div>`;
+  // article += `<div class="content-quote">${dataArray.quote}</div>`;
+  // article += `</div></div></article>`;
+  // let article = '';
+  // article += `
+  //         <article class="post" data-filter= "${dataArray.type}>"
+  //           <svg class="node">
+  //             <circle class="node-circle" cx="0" cy="0" r="12"/>
+  //           </svg>
+  //           <div class="post-content-wrapper">
+  //             <h3 class="post-title">${dataArray.title}</h3>
+  //             <div class="content-container display-none">
+  //               <div class="content-img">
+  //                 <img src="${dataArray.img}"/>
+  //                 <figcaption>${dataArray.fig}</figcaption>
+  //               </div>
+  //               <div class="content-quote">${dataArray.quote}</div>
+  //             </div>
+  //           </div>
+  //         </article>`;
+</script>

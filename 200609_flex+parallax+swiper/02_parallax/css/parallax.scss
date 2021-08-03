@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.parallax-window {
+  min-height: 100vh;
+  .other {
+    min-height: 600px;
+    background: #639;
+    color: #fff;
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 3000;
+  color: #fff;
+}

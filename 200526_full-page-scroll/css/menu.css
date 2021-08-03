@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Muli:ital,wght@1,577&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  right: 0;
+  z-index: 10;
+}
+
+nav ul {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-evenly;
+          justify-content: space-evenly;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-top: 2rem;
+  height: 80vh;
+}
+
+nav ul li {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 240px;
+  height: 160px;
+  list-style: none;
+  background: #bcfff650;
+}
+
+nav ul li a {
+  margin-left: 0.5rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  color: #faee5a;
+  text-shadow: -1px 1px 1px #4e413b;
+}
+
+nav ul:hover li:not(:hover) {
+  background: transparent;
+}
+
+nav ul:hover li:not(:hover) a:not(:hover) {
+  color: gray;
+  text-shadow: none;
+}
+
+nav ul:hover li {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+/*# sourceMappingURL=menu.css.map */

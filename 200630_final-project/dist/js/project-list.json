@@ -1,0 +1,136 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "type": "cultural",
+      "title": "The Museum of Modern Literature",
+      "img": "image/pj-1@2x.png",
+      "project_info": {
+        "completion":["Design Completion： ", "2005-2010"],
+        "location":["Location： ", "Hangzhou, China"],
+        "area":["Area: ", "200 ha"]
+      }
+    },
+    {
+      "id": 2,
+      "type": "cultural",
+      "title": "The Museum of Modern Literature",
+      "img": "image/pj-2@2x.png",
+      "project_info": {
+        "completion":["Design Completion： ", "2005-2010"],
+        "location":["Location： ", "Hangzhou, China"],
+        "area":["Area: ", "200 ha"]
+      }
+    },
+    {
+      "id": 3,
+      "type": "civic",
+      "title": "The Museum of Modern Literature",
+      "img": "image/pj-3@2x.png",
+      "project_info": {
+        "completion":["Design Completion： ", "2005-2010"],
+        "location":["Location： ", "Hangzhou, China"],
+        "area":["Area: ", "200 ha"]
+      }
+    },
+    {
+      "id": 4,
+      "type": "cultural",
+      "title": "The Museum of Modern Literature",
+      "img": "image/pj-4@2x.png",
+      "project_info": {
+        "completion":["Design Completion： ", "2005-2010"],
+        "location":["Location： ", "Hangzhou, China"],
+        "area":["Area: ", "200 ha"]
+      }
+    },
+    {
+      "id": 5,
+      "type": "commerical",
+      "title": "The Museum of Modern Literature",
+      "img": "image/pj-5@2x.png",
+      "project_info": {
+        "completion":["Design Completion： ", "2005-2010"],
+        "location":["Location： ", "Hangzhou, China"],
+        "area":["Area: ", "200 ha"]
+      }
+    },
+    {
+      "id": 6,
+      "type": "cultural",
+      "title": "The Museum of Modern Literature",
+      "img": "image/pj-6@2x.png",
+      "project_info": {
+        "completion":["Design Completion： ", "2005-2010"],
+        "location":["Location： ", "Hangzhou, China"],
+        "area":["Area: ", "200 ha"]
+      }
+    },
+    {
+      "id": 7,
+      "type": "residential",
+      "title": "The Museum of Modern Literature",
+      "img": "image/pj-7@2x.png",
+      "project_info": {
+        "completion":["Design Completion： ", "2005-2010"],
+        "location":["Location： ", "Hangzhou, China"],
+        "area":["Area: ", "200 ha"]
+      }
+    },
+    {
+      "id": 8,
+      "type": "cultural",
+      "title": "The Museum of Modern Literature",
+      "img": "image/pj-8@2x.png",
+      "project_info": {
+        "completion":["Design Completion： ", "2005-2010"],
+        "location":["Location： ", "Hangzhou, China"],
+        "area":["Area: ", "200 ha"]
+      }
+    },
+    {
+      "id": 9,
+      "type": "civic",
+      "title": "The Museum of Modern Literature",
+      "img": "image/pj-9@2x.png",
+      "project_info": {
+        "completion":["Design Completion： ", "2005-2010"],
+        "location":["Location： ", "Hangzhou, China"],
+        "area":["Area: ", "200 ha"]
+      }
+    },
+    {
+      "id": 10,
+      "type": "cultural",
+      "title": "The Museum of Modern Literature",
+      "img": "image/pj-10@2x.png",
+      "project_info": {
+        "completion":["Design Completion： ", "2005-2010"],
+        "location":["Location： ", "Hangzhou, China"],
+        "area":["Area: ", "200 ha"]
+      }
+    },
+    {
+      "id": 11,
+      "type": "commerical",
+      "title": "The Museum of Modern Literature",
+      "img": "image/pj-11@2x.png",
+      "project_info": {
+        "completion":["Design Completion： ", "2005-2010"],
+        "location":["Location： ", "Hangzhou, China"],
+        "area":["Area: ", "200 ha"]
+      }
+    },
+    {
+      "id": 12,
+      "type": "cultural",
+      "title": "The Museum of Modern Literature",
+      "img": "image/pj-12@2x.png",
+      "project_info": {
+        "completion":["Design Completion： ", "2005-2010"],
+        "location":["Location： ", "Hangzhou, China"],
+        "area":["Area: ", "200 ha"]
+      }
+    }
+  ]
+}

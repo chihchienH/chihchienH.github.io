@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+aside,
+section {
+  float: left;
+}
+
+aside {
+  width: 200px;
+}
+
+aside .box {
+  height: 200px;
+  font-size: 2em;
+  line-height: 200px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  background: #0cf;
+  transition: 0.5s;
+}
+
+aside .box:hover {
+  background-color: #4290f7;
+  color: white;
+  cursor: pointer;
+}
+
+aside .ch_bg {
+  background: #00279c;
+  color: white;
+}
+
+/*///////this is slide left///////*/
+section {
+  background: #ddd;
+  overflow: hidden;
+  width: 480px;
+  height: 600px;
+}
+
+section .float-container {
+  width: 1440px;
+}
+
+section .float-container .content {
+  position: relative;
+  float: left;
+  width: 480px;
+  height: 600px;
+  background-color: #f60;
+}
+
+section .float-container .yel {
+  background-color: yellow;
+}
+
+section .float-container .pink {
+  background-color: pink;
+}
+/*# sourceMappingURL=main_3.css.map */

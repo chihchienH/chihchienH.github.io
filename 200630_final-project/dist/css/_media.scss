@@ -1,0 +1,125 @@
+//////------- Tablet-large Size
+@include mediaXXl {
+  //// Timeline White--section
+  .section-white {
+    grid-template-columns: 0.4fr 0.6fr;
+    grid-gap: 24px;
+    .brief-title {
+      width: 95%;
+    }
+    .menu-right {
+      position: fixed;
+      z-index: 35;
+      top: 20px;
+      right: 40px;
+      width: 135 * 3px;
+      height: 33px;
+      clip-path: unset;
+      transform: translateX(-10%);
+      flex-direction: row;
+      align-items: center;
+      // js -> $(.menu-right-link).eq(3).html('')
+    }
+  }
+
+  //// Timeline Black--article
+  .section-parallax-dark .post-wrapper .post {
+    .post-content-wrapper {
+      .content-container {
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 410px;
+        .content-quote {
+          width: 95%;
+        }
+      }
+      &.evenContent .content-container {
+        grid-template-columns: 410px;
+      }
+    }
+  }
+}
+
+/////-------- Pad-Landscape Size
+@include mediaLg {
+  //// Timeline White--section
+  .section-white {
+    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+    align-items: center;
+    .brief-title {
+      top: 0;
+      height: 230px;
+      // js -> .scroll-text-underline.addClass('scroll')
+      // js -> h3.job.addClass('display-none')
+    }
+    .brief-img {
+      position: relative;
+      top: 0;
+      padding: 0 3rem 0.3rem 0;
+      width: 100%;
+      height: 35%;
+    }
+  }
+
+  //// Timeline Black--article
+
+  //// Projects--project-container
+  .progects-container {
+    height: 3000px;
+  }
+  .progects-container .main-description {
+    display: none;
+  }
+  //// Projects--item-grid
+  .progects-container .items {
+    margin-top: 7rem;
+    grid-gap: 40px;
+  }
+}
+/////-------- Pad Size
+@include mediaMd {
+  .section-white {
+    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+    grid-column-gap: 27px;
+    align-items: center;
+    .brief-title {
+      top: 0;
+      height: 230px;
+      // js -> .scroll-text-underline.addClass('scroll')
+      // js -> h3.job.addClass('display-none')
+    }
+    .brief-img {
+      order: 1;
+      position: relative;
+      top: 0;
+      height: 470px;
+    }
+    .menu-right {
+      position: absolute;
+      right: -50px;
+      height: 33px;
+      transform: translateX(-50%);
+      flex-direction: row;
+      align-items: center;
+      // js -> $(.menu-right-link).eq(3).html('')
+    }
+  }
+
+  //// Project--project-container
+  .progects-container {
+    height: 7500px;
+  }
+  .progects-container .main-description {
+    display: none;
+  }
+  //// Projects--item-grid
+  .progects-container .items {
+    grid-template-rows: repeat(auto-fit, minmax(380px, 1fr));
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .progects-container .main-description {
+    width: 90%;
+    font-size: 32px;
+  }
+}

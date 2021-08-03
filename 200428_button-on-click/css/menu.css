@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  right: 0;
+}
+
+nav ul {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-evenly;
+          justify-content: space-evenly;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-top: 2rem;
+  height: 80vh;
+}
+
+nav ul li {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 220px;
+  height: 200px;
+  list-style: none;
+  background: #e4fcf9;
+}
+
+nav ul li a {
+  margin-left: 0.5rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  color: #faee5a;
+  text-shadow: -1px 1px 1px #4e413b;
+}
+
+nav ul:hover li:not(:hover) a:not(:hover) {
+  color: white;
+  text-shadow: 0px 0px 0px;
+}
+
+nav ul:hover li {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+/*# sourceMappingURL=menu.css.map */

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,500,500i,700|Noto+Sans+TC:400,500,700|Open+Sans:400,400i,600,600i,700&display=swap&subset=chinese-traditional');
+
+@font-face {
+  font-family: 'BloggerSans-Bold';
+  src: url('../fonts/BloggerSans-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'BloggerSans-Medium';
+  src: url('../fonts/BloggerSans-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'BloggerSans-MediumItalic';
+  src: url('../fonts/BloggerSans-MediumItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'BloggerSans-Regular';
+  src: url('../fonts/BloggerSans.woff') format('woff');
+}
+@font-face {
+  font-family: 'BloggerSans-LightItalic';
+  src: url('../fonts/BloggerSans-LightItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'GenJyuuGothic-Bold';
+  src: url('../fonts/GenJyuuGothic-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'GenJyuuGothic-Medium';
+  src: url('../fonts/GenJyuuGothic-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'GenJyuuGothic-Regular';
+  src: url('../fonts/GenJyuuGothic-Regular.woff') format('woff');
+}

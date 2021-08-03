@@ -1,0 +1,86 @@
+///// Color
+$primary-bgcolor: #fff;
+$primary-bgcolor-dark: #000;
+$secondary-bgcolor:grey;
+$project-cardcolor:rgba(255, 235, 193, 0.5);
+
+$current-color-dark: set-text-color($primary-bgcolor);
+$current-color-light: set-text-color($primary-bgcolor-dark);
+
+///// Global Settings
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  ul,
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+body {
+  position: relative;
+}
+
+////////// JS control //////////
+.display-none {
+  display: none;
+  opacity: 0;
+}
+.hide {
+  visibility: hidden;
+}
+.show-text,
+.show,
+.active {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  // @include easeIn;
+}
+
+
+///// Function-Ease
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
+@mixin easeIn {
+  transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+}
+@mixin easeCubic {
+  transition: 750ms cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+///// Media Query Mixins
+// Smartphones
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+// Tablets & Small Laptops
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+// Desktops & Laptops
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+// Widescreens
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) and (max-width: 1500px) {
+    @content;
+  }
+}
+// Widescreens-Timeline
+@mixin mediaXXl {
+  @media screen and (max-width: 1501px) {
+    @content;
+  }
+}

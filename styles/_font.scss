@@ -1,0 +1,148 @@
+@import 'config';
+
+/* Font import */
+@font-face {
+  font-family: 'BloggerSans-Light';
+  src: url('../fonts/BloggerSans-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'BloggerSans-LightItalic';
+  src: url('../fonts/BloggerSans-LightItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'BloggerSans';
+  src: url('../fonts/BloggerSans.woff') format('woff');
+}
+@font-face {
+  font-family: 'BloggerSans-Italic';
+  src: url('../fonts/BloggerSans-Italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'BloggerSans-Medium';
+  src: url('../fonts/BloggerSans-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'GenJyuuGothic-Regular';
+  src: url('../fonts/GenJyuuGothic-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'GenJyuuGothic-Medium';
+  src: url('../fonts/GenJyuuGothic-Medium.woff') format('woff');
+}
+
+///// Font RWD Size /////
+
+$fontSizes: (
+  desktop: (
+    large: 34px,
+    medium: 28px,
+    s-medium: 24px,
+    normal: 18px,
+    s-normal: 16px
+  ),
+  laptop: (
+    large: 24px,
+    medium: 18px,
+    s-medium: 18px,
+    normal: 18px,
+    s-normal: 12px,
+    small: 12px,
+    s-small: 10px
+  )
+);
+
+@mixin rwd-font-size($size: 'normal') {
+  @media screen and (min-width: 1281px) {
+    $desktop: map-get($fontSizes, desktop);
+    font-size: map-get($desktop, $size);
+  }
+  @media screen and (min-width: 769px) and (max-width: 1280px) {
+    $laptop: map-get($fontSizes, laptop);
+    font-size: map-get($laptop, $size);
+  }
+}
+
+///// Font setting /////
+* {
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    margin: 0;
+    padding: 0;
+    font-weight: unset;
+  }
+  span.eng {
+    display: table;
+  }
+}
+
+
+////// Side Nav //////
+h2.head-title {
+  font-family: 'BloggerSans-Italic';
+  @include rwd-font-size(medium);
+  @include font-color-norm;
+}
+.side-nav-list {
+  font-family: 'GenJyuuGothic-Medium';
+  @include rwd-font-size(large);
+  @include font-color-norm-unhover;
+}
+.side-nav-list span.eng {
+  font-family: 'BloggerSans';
+  @include rwd-font-size(medium);
+  @include font-color-norm-unhover;
+}
+.side-description-text {
+  font-family: 'BloggerSans-LightItalic';
+  @include rwd-font-size(normal);
+  @include font-color-norm;
+}
+.tag {
+  font-family: 'BloggerSans-Italic';
+  @include rwd-font-size(s-medium);
+  @include font-color-norm-unhover;
+}
+
+////// Project //////
+.item-date {
+  font-family: 'BloggerSans-Light';
+  @include rwd-font-size(normal);
+  color: lighten($current-color-dark, 30%);
+}
+h3.item-text-title {
+  font-family: 'GenJyuuGothic-Medium';
+  @include rwd-font-size(s-medium);
+  @include font-color-norm;
+}
+h3.item-text-title span.eng {
+  font-family: 'BloggerSans-Medium';
+  @include rwd-font-size(normal);
+  @include font-color-norm;
+}
+.item-text-description {
+  font-family: 'GenJyuuGothic-Regular';
+  @include rwd-font-size(normal);
+  color: lighten($current-color-dark, 30%);
+}
+.detail-tag {
+  font-family: 'BloggerSans-LightItalic';
+  @include rwd-font-size(normal);
+  color: lighten($current-color-dark, 30%);
+}
+.cta-text {
+  font-family: 'BloggerSans-LightItalic';
+  @include rwd-font-size(normal);
+  color: lighten($current-color-dark, 30%);
+  text-decoration: underline;
+}
+
+/// Footer ///
+footer {
+  font-family: 'BloggerSans-LightItalic';
+  @include rwd-font-size(normal);
+  @include font-color-light;
+  text-decoration: underline;
+}

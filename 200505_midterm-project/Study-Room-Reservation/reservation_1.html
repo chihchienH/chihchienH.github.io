@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Space Borrowing System | Reservation Step1</title>
+    <link rel="stylesheet" href="css/reservation_1.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <div class="icon">
+          <a href="landing-page.html"></a>
+        </div>
+        <div class="logo-text">
+          <p class="logo-ch">
+            圖書館空間預約系統<span class="logo-en"
+              >Library Space Borrowing System</span
+            >
+          </p>
+          <p class="step">Step 1/3</p>
+        </div>
+      </div>
+
+      <nav>
+        <!-- <div class="nav-btn-img"></div> -->
+        <!-- hamburger menu -->
+        <a href="#">
+          <img
+            src="images/nav_btn_open.png"
+            class="nav-btn-img menu"
+            id="menu"
+          />
+        </a>
+        <!-- menu pop -->
+        <ul class="show hide" id="open">
+          <li id="exit" class="exit-btn">
+            <img src="images/nav_btn_close.png" />
+          </li>
+          <li><a href="room-intro.html" class="nav-ch">空間介紹</a></li>
+          <li><a href="#" class="nav-ch">個人檔案</a></li>
+          <li><a href="#" class="nav-ch">關於系統</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div class="container">
+        <!-- section1 -->
+        <div class="sec-floor">
+          <div class="legend">
+            <p class="legend-ch">
+              可預約<span class="legend-en">available</span>
+            </p>
+            <p class="legend-ch">已滿<span class="legend-en">full</span></p>
+          </div>
+          <div class="floor-img"></div>
+          <div class="floor-btn">
+            <!-- <input type="checkbox" id="switch-6f" />
+            <label for="switch-6f" class=".floor-btn is-6f">6F</label>
+            <input type="checkbox" id="switch-7f" />
+            <label for="switch-7f" class=".floor-btn is-7f">7F</label> -->
+            <div class="the-btn btn-right"></div>
+            <div class="floor-label">
+              <button id="l-btn" class="floor-btn-num">7F</button>
+              <button id="r-btn" class="floor-btn-num">6F</button>
+            </div>
+            <p class="guide">2. 請閱覽樓層</p>
+          </div>
+        </div>
+        <!-- section2 -->
+        <!-- use label, click one and other disable, click again other enable -->
+        <div class="sec-emptyspace">
+          <p class="guide">3. 請選擇空房</p>
+          <div class="room-cta">
+            <div class="room-block">
+              <p class="space-btn">606</p>
+              <div class="arrow-up"></div>
+              <div class="hover-block"></div>
+            </div>
+            <div class="room-block">
+              <p class="space-btn">601</p>
+              <div class="hover-block"></div>
+            </div>
+            <div class="room-block">
+              <p class="space-btn">603</p>
+              <div class="hover-block"></div>
+            </div>
+            <div class="room-block">
+              <p class="space-btn">612</p>
+              <div class="hover-block"></div>
+            </div>
+            <div class="room-block">
+              <p class="space-btn">608</p>
+              <div class="arrow-dn"></div>
+              <div class="hover-block"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- section3 -->
+        <!-- use js to overwrite the invalid day, no box shadow -->
+        <div class="calendar">
+          <div class="date-bg">
+            <div class="calendar-head">
+              <p class="calendar-title">May 2020</p>
+              <p class="guide">1. 請選擇日期</p>
+            </div>
+            <div class="calendar-body">
+              <div class="week">
+                <div class="weekname">Mon</div>
+                <div class="weekname">Tue</div>
+                <div class="weekname">Wed</div>
+                <div class="weekname">Thu</div>
+                <div class="weekname">Fri</div>
+                <div class="weekname">Sat</div>
+                <div class="weekname">Sun</div>
+              </div>
+              <div class="days">
+                <button class="date-num">1</button>
+                <button class="date-num">2</button>
+                <button class="date-num">3</button>
+                <button class="date-num">4</button>
+                <button class="date-num">5</button>
+                <button class="date-num">6</button>
+                <button class="date-num">7</button>
+                <button class="date-num">8</button>
+                <button class="date-num">9</button>
+                <button class="date-num">10</button>
+                <button class="date-num">11</button>
+                <button class="date-num">12</button>
+                <button class="date-num">13</button>
+                <button class="date-num">14</button>
+                <button class="date-num">15</button>
+                <button class="date-num">16</button>
+                <button class="date-num">17</button>
+                <button class="date-num">18</button>
+                <button class="date-num">19</button>
+                <button class="date-num">20</button>
+                <button class="date-num">21</button>
+                <button class="date-num">22</button>
+                <button class="date-num">23</button>
+                <button class="date-num">24</button>
+                <button class="date-num">25</button>
+                <button class="date-num">26</button>
+                <button class="date-num">27</button>
+                <button class="date-num">28</button>
+                <button class="date-num">29</button>
+                <button class="date-num">30</button>
+                <button class="date-num">31</button>
+              </div>
+            </div>
+            <!-- end of calendar-body -->
+          </div>
+          <div class="next-btn">
+            <li><a class="btn-cta" href="reservation_2.html">確認時段</a></li>
+          </div>
+          <!-- end of calendar -->
+        </div>
+        <!-- end of container -->
+      </div>
+    </section>
+
+    <!-- <input type="checkbok" id="toggle">
+    <label for="toggle" class="date-num"></label> -->
+
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+    ></script>
+    <script type="text/javascript" src="script/reservation_1.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+@charset "utf-8";
+@import 'config';
+/* CSS Document */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*/////////aside/////////*/
+aside {
+  position: fixed;
+  left: 50px;
+  top: 50px;
+  z-index: 10;
+  .box {
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    background: $box-bg;
+    font-size: 4em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    &:hover {
+      background: $box-bg-hover;
+      cursor: pointer;
+    }
+  }
+  /*change background*/
+  .ch_bg {
+    background: $box-bg-active;
+  }
+}
+
+/*/////////section/////////*/
+section,
+article {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  article:nth-child(1) {
+    background: #9b90c2 url(../images/p1.jpg) no-repeat;
+    background-size: cover;
+  }
+  article:nth-child(2) {
+    background: #b28fce url(../images/p2.jpg) no-repeat;
+    background-size: cover;
+  }
+  article:nth-child(3) {
+    background: #7b90d2 url(../images/p3.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 8em;
+    font-family: 'Muli', sans-serif;
+    color: #fff;
+  }
+}

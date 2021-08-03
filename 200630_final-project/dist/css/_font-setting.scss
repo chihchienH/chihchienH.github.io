@@ -1,0 +1,207 @@
+@import 'config';
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Neuton:ital@0;1&display=swap');
+@font-face {
+  font-family: 'MissionGothic-Bold';
+  src: url('../font/MissionGothic-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'MissionGothic-Regular';
+  src: url('../font/MissionGothic-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'MissionGothic-Light';
+  src: url('../font/MissionGothic-Light.woff') format('woff');
+}
+
+///// Font Configuration /////
+
+$fontSizes: (
+  desktop: (
+    x-large: 48px,
+    large: 36px,
+    medium: 28px,
+    s-medium: 24px,
+    normal: 18px,
+    s-normal: 16px,
+    small: 12px,
+    s-small: 12px
+  ),
+  laptop: (
+    x-large: 36px,
+    large: 36px,
+    medium: 20px,
+    s-medium: 16px,
+    // normal: 18px,
+    s-normal: 12px,
+    small: 12px,
+    s-small: 10px
+  ),
+  pad-l: (
+    x-large: 36px,
+    large: 36px,
+    medium: 20px,
+    s-medium: 16px,
+    // normal: 18px,
+    s-normal: 12px,
+    small: 12px,
+    s-small: 10px
+  )
+);
+
+///// Function-Font Color and Size
+// Set Text Color by Background
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000; //within light bg
+  } @else {
+    @return #fff; //within dark bg
+  }
+}
+
+@mixin font-color-norm {
+  color: set-text-color($primary-bgcolor);
+}
+@mixin font-color-light {
+  color: set-text-color($primary-bgcolor-dark);
+}
+
+@mixin rwd-font-size($size: 'normal') {
+  @media screen and (min-width: 1170px) {
+    $desktop: map-get($fontSizes, desktop);
+    font-size: map-get($desktop, $size);
+  }
+  @media screen and (max-width: 1501px) {
+    $laptop: map-get($fontSizes, laptop);
+    font-size: map-get($laptop, $size);
+  }
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    $pad-l: map-get($fontSizes, pad-l);
+    font-size: map-get($pad-l, $size);
+  }
+
+}
+
+
+///// Font setting /////
+*{
+  h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+    font-weight: unset;
+  }
+}
+
+// Header and Nav Font
+.nav-link {
+  font-family: 'Neuton', serif;
+  @include rwd-font-size(x-large);
+  color: darken(set-text-color($primary-bgcolor-dark), 40%);
+  letter-spacing: 2px;
+  & > span {
+    font-family: 'MissionGothic-Regular';
+    @include rwd-font-size(normal);
+  }
+}
+h3.logo a {
+  font-family: 'MissionGothic-Regular';
+  @include rwd-font-size(s-medium);
+  @include font-color-norm;
+}
+p.menu-btn {
+  font-family: 'MissionGothic-Regular';
+  @include rwd-font-size(normal);
+  @include font-color-norm;
+}
+
+// TimeLine-White bg Font
+h1 {
+  font-family: 'MissionGothic-Bold';
+  @include rwd-font-size(x-large);
+  @include font-color-norm;
+}
+h1.small {
+  font-family: 'MissionGothic-Bold';
+  @include rwd-font-size(large);
+  @include font-color-norm;
+}
+h2.menu-right-item {
+  font-family: 'Neuton', serif;
+  @include rwd-font-size(medium);
+  @include font-color-norm;
+}
+h3.job {
+  font-family: 'Neuton', serif;
+  @include rwd-font-size(s-medium);
+  color: $secondary-bgcolor;
+}
+h3.italic {
+  font-family: 'Neuton', serif;
+  @include rwd-font-size(s-medium);
+  color: $secondary-bgcolor;
+  font-style: italic;
+}
+p.menu-right-num {
+  font-family: 'MissionGothic-Regular';
+  @include rwd-font-size(s-normal);
+  @include font-color-norm;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+  // letter-spacing: 0.5px;
+  line-height: 18px;
+  @include rwd-font-size(small);
+  @include font-color-norm;
+}
+figcaption.mainpage-img-description {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 18px;
+  @include rwd-font-size(s-small);
+  @include font-color-norm;
+}
+p.scroll-dn-message {
+  font-family: 'Montserrat', sans-serif;
+  @include rwd-font-size(small);
+  @include font-color-norm;
+}
+
+// TimeLine-Dark bg Font
+h3.post-title {
+  font-family: 'MissionGothic-Regular';
+  @include rwd-font-size(s-medium);
+  @include font-color-light;
+}
+.content-quote {
+  font-family: 'Neuton', serif;
+  @include rwd-font-size(medium);
+  @include font-color-light;
+  font-style: italic;
+}
+figcaption {
+  font-family: 'MissionGothic-Light';
+  @include rwd-font-size(small);
+  @include font-color-light;
+}
+
+// Project
+h3.main-description {
+  font-family: 'Neuton', serif;
+  @include rwd-font-size(large);
+  color: lighten ($current-color-dark, 30%);
+  font-style: italic;
+}
+h3.item-title {
+  font-family: 'MissionGothic-Regular';
+  @include rwd-font-size(medium);
+  @include font-color-light;
+}
+.item-hidden-info li {
+  font-family: 'MissionGothic-Regular';
+  @include rwd-font-size(normal);
+  @include font-color-norm;
+}
+.item-hidden-info li span {
+  font-family: 'MissionGothic-Regular';
+  @include rwd-font-size(normal);
+  @include font-color-norm;
+}

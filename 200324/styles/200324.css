@@ -1,0 +1,174 @@
+@charset "utf-8";
+/* CSS Document */
+/* *{
+  box-sizing: border-box;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap');
+
+html, body{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family:'Noto Sans TC', 'Nanum Gothic', sans-serif;
+  font-weight: 400;
+  background: #e5e5e5;
+}
+
+/*////////////////////////*/
+/* header */
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-sizing: border-box;
+  background: rgba(112, 112, 112, 0.8);
+  z-index: 100000; /*圖層概念，數值越大在越上方，所以header在最上方*/
+}
+
+/* navigation */
+nav{
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+}
+
+nav li{ /* list default is block element */
+  display: inline-block;
+  /* display: inline; */
+}
+
+nav li a{
+  display: inline-block;
+  /* display: inline; */
+  padding: 20px 50px;
+  color: #fff;
+  text-decoration: none;
+}
+nav li a:hover{
+  background-color: rosybrown;
+}
+
+/*////////////////////////*/
+/* section */
+section{
+	position:relative;
+	width:80%;
+	height:500px;
+	overflow: hidden; /*將多出的內容隱藏*/
+  margin:100px auto 12px; /*margin 讓圖片置中*/
+}
+
+.left, .bg{
+	position:absolute; /*offset from 被定義position的ancestor: section*/
+	box-sizing:border-box;
+}
+/*圖片尺寸*/
+.bg{
+	width:100%;
+}
+.left{
+	width:50%;
+	left:50px;
+	top:150px;
+	background: rgba(253, 116, 104, .8);
+	padding:30px;
+	z-index:20;
+	color:rgba(255, 255, 255, 1);
+}
+
+/*文字排版*/
+.left p, .left h1{
+	padding:0;
+	margin:0;
+}
+.left h1{
+  font-family: 'Timmana', sans-serif;
+	font-size:52px;
+	padding-bottom:20px;
+}
+
+/*////////////////////////*/
+/* article */
+article{
+  position:relative;
+  width: 80%;
+  padding: 0;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.card{
+  float:left;
+	box-sizing:border-box;
+	width:33.33%; /*限制最大範圍*/
+	min-width:300px; /*限制最小範圍*/
+	background: rgba(253, 116, 104, 1);
+  text-align:center;
+	border:solid 5px #ffca84;
+	padding:1rem 0px;
+  color:#fff;
+  transition-property:background, color, padding, font-size;
+  transition-duration:.8s;
+}
+
+.card:hover{
+	cursor:pointer;
+	color:rgba(255,255,255,0.5);
+  background: rgba(136, 163, 179, 1);
+  padding: 1.2em 0px;
+  font-size: 1.5em ;
+	/* -webkit-transition: background .35s, color 1s; 前綴詞，讓早期版本可以動 For Safari 3.1 to 6.0 */
+}
+
+/*////////////////////////*/
+/* aside */
+aside{
+  position:relative;
+  top: 1rem;
+  clear: both; /*中止.card float的position*/
+  width: 80%;
+  margin: auto;
+}
+
+.wraptext{
+  float:left;
+  width:100%;
+	box-sizing:border-box; /*讓框內的物件*/
+	padding:20px;
+	background:#fff;
+	border:solid 5px #ffca84;
+	color: rgba(253, 116, 104, 1);
+}
+
+.wraptext p{
+	padding:0;
+	margin:0;
+	line-height:1.5em; /*行距*/
+}
+
+.wraptext img{
+	float:left;
+	padding-right:20px;
+}
+
+/*////////////////////////*/
+/*footer*/
+footer{
+  position:relative;
+  top: 2rem;
+	clear:both;
+	padding:20px 0px;
+	text-align:center;
+}
+#copy{
+  color:#F60;
+}
+

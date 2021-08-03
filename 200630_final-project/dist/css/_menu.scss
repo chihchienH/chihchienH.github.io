@@ -1,0 +1,134 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 73.5px;
+  padding: 24px 24px 15px 52px;
+  background: $primary-bgcolor;
+  z-index: 30;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  // Add class'switch-bg' // Change header background to dark
+  &.switch-bg {
+    background-color: $primary-bgcolor-dark;
+  }
+  // Remove class'hide' // Hide menu-btn first, when scroll down, show
+  // div.menu.hide
+  .hide {
+    visibility: hidden;
+    // opacity: 0;
+  }
+
+  /////----- Menu Button -----/////
+  .menu {
+    cursor: pointer;
+    position: relative;
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 50;
+    clip-path: inset(100% 0 0 0);
+    @include easeIn;
+    &.scroll-show{
+      clip-path: inset(0 0 0 0);
+    }
+    .menu-btn {
+      margin-top: -3px;
+      margin-right: 8px;
+      // Add class'switch-color' // Change text color
+      &.switch-color {
+        color: $current-color-light;
+      }
+    }
+    .menu-hamburger{
+      position: relative;
+      width: 50px;
+      line {
+        stroke: $current-color-dark;
+        stroke-width: 2px;
+        &.switch-color {
+          stroke: $current-color-light;
+        }
+      }
+    }
+  }
+
+  /////----- Menu highlight -----/////
+  .current {
+    opacity: 1;
+    // White bg
+    & ~ .menu-right-link {
+      opacity: 0.8;
+      color: lighten($current-color-dark, 30%);
+    }
+    // Dark bg
+    & ~ .nav-item {
+      opacity: 0.8;
+      color: rgba($current-color-light, 0.6);
+    }
+  }
+
+  /////----- Menu overlay -----/////
+  .the-overlay {
+    position: fixed;
+    z-index: 31;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(#393939, 0.7);
+    opacity: 0; //by default
+    visibility: hidden; //by default
+  }
+  .menu-container {
+    position: fixed;
+    z-index: 32;
+    top: 0;
+    right: 0;
+    width: 65%;
+    height: 100vh;
+    background-color: rgba(#393939, 1);
+    transform: translateX(100%); //by default
+    opacity: 0; //by default
+
+    /// Menu-nav box ///
+    .menu-nav {
+      position: absolute;
+      top: 350px;
+      left: 380px;
+      padding: 2rem;
+      width: 330px;
+      height: 440px;
+      display: flex;
+      flex-direction: column;
+
+      /// Menu-nav-list-item ///
+      .nav-item {
+        position: relative;
+        transform: translateX(30%); //by default
+        opacity: 0; //by default
+
+        .nav-link {
+          position: relative;
+          margin-bottom: 3rem;
+          display: flex;
+          align-items: center;
+          @include easeOut;
+          & > span {
+            margin-right: 57px;
+          }
+          &.current {
+            color: $current-color-light;
+          }
+        }
+        &:hover .nav-link{
+          color: $current-color-light;
+        }
+      }
+    }
+  }
+}

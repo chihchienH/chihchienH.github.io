@@ -1,0 +1,11 @@
+<svg id="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.97 22.45">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231815;
+      }
+    </style>
+  </defs>
+  <title>arrow-right</title>
+  <path id="arrow-right-2" data-name="arrow-right" class="cls-1" d="M50.15,22.81,60.06,13h0a1.45,1.45,0,0,0,0-2h0L50.15,1.19a1.44,1.44,0,1,0-2,2l7.43,7.34H6a1.43,1.43,0,0,0,0,2.86H55.56l-7.43,7.34a1.47,1.47,0,0,0-.43,1,1.42,1.42,0,0,0,.42,1A1.44,1.44,0,0,0,50.15,22.81Z" transform="translate(-4.52 -0.77)"/>
+</svg>

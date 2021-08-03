@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>David-Chipperfield-Architect-Timeline</title>
+    <!-- generate from .scss file -->
+    <!-- 以Sass撰寫，Chrome Inspector請查看css.map -->
+    <link rel="stylesheet" href="css/timeline-main.css" />
+  </head>
+
+  <body>
+    <!-- //////////////////// -->
+    <!-- header -->
+    <header class="fixed-nav">
+      <!-- top-left--logo -->
+      <h3 class="logo"><a href="index-timeline.html">Introduction</a></h3>
+
+      <!-- top-right--menu-btn -->
+      <div class="menu hide">
+        <p class="menu-btn">Menu</p>
+        <svg class="menu-hamburger" viewBox="0 0 48 24">
+          <line class="line-one" x1="12" y1="6" x2="36" y2="6" />
+          <line class="line-two" x1="12" y1="12" x2="36" y2="12" />
+          <line class="line-three" x1="12" y1="18" x2="36" y2="18" />
+        </svg>
+      </div>
+
+      <!-- menu-overlay-container -->
+      <div class="the-overlay"></div>
+      <nav class="menu-container">
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index-timeline.html" class="nav-link current">
+              <span>01</span>
+              Timeline
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="index-projects.html" class="nav-link">
+              <span>02</span>
+              Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <span>03</span>
+              Practices
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <span>04</span>
+              Credits
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- /////////////////////////////////// -->
+    <!-- ///// Section-white ///// -->
+    <section class="section-white">
+
+      <!-- left--brief-title -->
+      <div class="brief-title">
+        <!-- change text when scroll -->
+        <h3 class="job">Founder / Design Principal</h3>
+        <h1>
+          David Chipperfield Architect
+          <!-- text-underline -->
+          <div class="scroll-text-underline"></div>
+        </h1>
+
+        <!-- show text when scroll -->
+        <h3 class="italic display-none">“The difference between a good building and a bad building normally resides in being more thought about.”</h3>
+        <p class="display-none">The career of British architect David Chipperfield (born 18 December 1953) has spanned decades and continents as an architect, designer and professor. Since 1984, he has been at the helm of David Chipperfield Architects, an award winning firm with over 180 staff at offices in London, Berlin, Milan, and Shanghai.</p>
+      </div>
+
+      <!-- middle--brief-img -->
+      <div class="brief-img parallax-window" data-parallax="scroll">
+        <div class="mainpage-img"></div>
+        <figcaption class="mainpage-img-description"> David Chipperfield (from right) with the work group at the studio in London in 1986, one year after he had opened it.</figcaption>
+      </div>
+
+      <!-- right--menu-right -->
+      <div class="menu-right">
+        <a href="index-timeline.html" class="menu-right-link current">
+          <p class="menu-right-num">01</p>
+          <h2 class="menu-right-item">Timeline</h2>
+        </a>
+        <a href="index-projects.html" class="menu-right-link">
+          <p class="menu-right-num">02</p>
+          <h2 class="menu-right-item">Projects</h2>
+        </a>
+        <a href="" class="menu-right-link">
+          <p class="menu-right-num">03</p>
+          <h2 class="menu-right-item">Practices</h2>
+        </a>
+        <a href="" class="menu-right-link">
+          <p class="menu-right-num">04</p>
+          <h2 class="menu-right-item">Credits</h2>
+        </a>
+      </div>
+
+      <!-- bottom--scroll down indicate -->
+      <div class="scroll-dn">
+        <p class="scroll-dn-message">scroll down</p>
+        <div class="scroll-dn-box">
+          <div class="scroll-dn-box-mouse"></div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- /////////////////////////////////// -->
+    <!-- ///// Section-black ///// -->
+    <section class="section-parallax-dark">
+      <!-- go-to-top-arrow -->
+      <div class="arrow">
+        <a href="" class="arrow-link"></a>
+      </div>
+      <!-- timeline-stroke -->
+      <div class="line-wrapper">
+        <svg class="svg-timeline">
+          <rect class="svg-timeline-bg" x="1.5" y="0"/>
+          <rect class="svg-timeline-fill" x="1.5" y="0"/>
+        </svg>
+      </div>
+
+      <!-- timeline-wrapper -->
+      <div class="post-wrapper">
+
+      </div>
+
+      <div class="side-nav">
+        <ul class="filter-timeline">
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+        </ul>
+        <ul class="filter-options">
+          <!-- JS: .active -->
+          <li><button class="btn-tag active">show all</button></li>
+          <!-- <li><button class="btn-tag">show big event</button></li> -->
+          <li><button class="btn-tag">projects</button></li>
+          <li><button class="btn-tag">publications</button></li>
+          <li><button class="btn-tag">talks</button></li>
+          <li><button class="btn-tag">awards</button></li>
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- JS libraries -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/parallax.js"></script>
+    <!-- JS files -->
+    <script src="js/timeline-import-function.js"></script>
+    <script src="js/main-text-scroll.js"></script>
+    <script src="js/menu.js"></script>
+    <!-- End of Code -->
+  </body>
+</html>

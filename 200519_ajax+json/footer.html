@@ -1,0 +1,13 @@
+&copy; 此為課堂學習範例使用，圖片版權為原作者公司所有，請勿轉用商用。
+<ul>
+  <li><i class="hidefig figure fab fa-angellist"></i></li>
+  <li><i class="hidefig figure fas fa-apple-alt"></i></li>
+  <li><i class="hidefig figure fas fa-frog"></i></li>
+</ul>
+
+<script>
+  $(function () {
+    var pageNum = $('body').data('pagenum');
+    $('i').eq(pageNum).removeClass('hidefig');
+  })
+</script>

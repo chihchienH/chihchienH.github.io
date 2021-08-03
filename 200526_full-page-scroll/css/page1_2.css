@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Muli:ital,wght@1,577&display=swap");
+/* CSS Document */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*/////////aside/////////*/
+aside {
+  position: fixed;
+  left: 50px;
+  top: 50px;
+  z-index: 10;
+  /*change background*/
+}
+
+aside .box {
+  margin: 10px;
+  width: 80px;
+  height: 80px;
+  background: #ccc;
+  font-size: 4em;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+aside .box:hover {
+  background: #FAD689;
+  cursor: pointer;
+}
+
+aside .ch_bg {
+  background: #F7C242;
+}
+
+/*/////////section/////////*/
+section,
+article {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+section article:nth-child(1),
+article article:nth-child(1) {
+  background: #9b90c2 url(../images/p1.jpg) no-repeat;
+  background-size: cover;
+}
+
+section article:nth-child(2),
+article article:nth-child(2) {
+  background: #b28fce url(../images/p2.jpg) no-repeat;
+  background-size: cover;
+}
+
+section article:nth-child(3),
+article article:nth-child(3) {
+  background: #7b90d2 url(../images/p3.jpg) no-repeat;
+  background-size: cover;
+}
+
+article {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+article h1 {
+  font-size: 8em;
+  font-family: 'Muli', sans-serif;
+  color: #fff;
+}
+/*# sourceMappingURL=page1_2.css.map */

@@ -1,0 +1,116 @@
+///// Color /////
+$primary-bgcolor: #fff;
+$primary-bgcolor-dark: #000;
+$secondary-bgcolor: grey;
+$project-cardcolor: rgba(255, 235, 193, 0.5);
+
+$current-color-dark: set-text-color($primary-bgcolor);
+$current-color-light: set-text-color($primary-bgcolor-dark);
+
+///// Font Color /////
+// Set Text Color by Background
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000; //within light bg
+  } @else {
+    @return #fff; //within dark bg
+  }
+}
+
+@mixin font-color-norm-unhover {
+  color: lighten($current-color-dark, 60%);
+}
+
+@mixin font-color-norm {
+  color: $current-color-dark;
+}
+
+@mixin font-color-light {
+  color: $current-color-light;
+}
+
+///// Global Settings /////
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  ul,
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+body {
+  position: relative;
+}
+
+////////// JS control //////////
+.display-none {
+  display: none;
+  opacity: 0;
+}
+.hide {
+  visibility: hidden;
+}
+.show,
+.active {
+  display: block;
+  scale: 1;
+}
+
+////////// JS control-Layout //////////
+
+.flex-col-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.flex-row-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+}
+
+///// Function-Ease
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
+@mixin easeIn {
+  transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+}
+@mixin easeCubic {
+  transition: 750ms cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+///// Media Query Mixins
+// Smartphones
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+// Tablets & Small Laptops
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+// Desktops & Laptops
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1280px) {
+    @content;
+  }
+}
+// Widescreens
+@mixin mediaXl {
+  @media screen and (min-width: 1281px) and (max-width: 1500px) {
+    @content;
+  }
+}

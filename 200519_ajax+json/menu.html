@@ -1,0 +1,29 @@
+<ul>
+  <li><a href="index.html">ABOUT</a></li>
+  <li><a href="index_art.html">ART WORK</a></li>
+  <li><a href="index_other.html">OTHER</a></li>
+</ul>
+
+<!-- change list color -->
+
+<script>
+  $(function () {
+    // 會去檢查目前被load進的html中body的data-pagenum="?"，並增加class在list上，但不用移除上一個的class。
+
+    /* 流程：
+    A html js ->
+    load nav.html ->
+    read A html ->
+    A html+nav -> ///
+    點擊B -> B html js -> (這時nav.html要重load了)
+    load nav.html ->
+    read B html ->
+    B html+nav
+    */
+    // A html js 只能load，不能操控nav.html裡面的DOM。nav.html可以操控自己的DOM，也可以操控 A html的DOM，因為被load進去了
+
+    // don't have to removeClass in a single page, it will addClass in the target page
+    var pageNum = $('body').data('pagenum');
+    $('li').eq(pageNum).addClass('change_bg_'+ pageNum);
+  })
+</script>

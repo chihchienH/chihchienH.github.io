@@ -1,0 +1,101 @@
+/* CSS Document */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Muli:ital,wght@1,577&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*/////////aside/////////*/
+aside {
+  position: absolute;
+  left: 50px;
+  top: calc((100vh - 280px) / 2);
+  z-index: 10;
+  /*change background*/
+}
+
+aside .box {
+  margin: 10px;
+  width: 80px;
+  height: 80px;
+  background: #ccc;
+  font-size: 4em;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+aside .box:hover {
+  background: #fad689;
+  cursor: pointer;
+}
+
+aside .ch_bg {
+  background: #f7c242;
+}
+
+/*/////////section/////////*/
+section,
+article {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+article {
+  overflow: hidden;
+}
+
+article:nth-child(1) {
+  background: url(../images/p1.jpg) no-repeat;
+  background-size: cover;
+}
+
+article:nth-child(2) {
+  background: url(../images/p2.jpg) no-repeat;
+  background-size: cover;
+}
+
+article:nth-child(3) {
+  background: url(../images/p3.jpg) no-repeat;
+  background-size: cover;
+}
+
+article .cenalign {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+}
+
+article .cenalign .moved {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: perspective(1200px);
+          transform: perspective(1200px);
+}
+
+article .cenalign h1 {
+  font-size: 8em;
+  margin-bottom: 0.6rem;
+}
+
+article .cenalign h1,
+article .cenalign p {
+  transition: all 1s ease;
+}
+
+article .cenalign .moved.hid h1 {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 0, 400px) rotateY(-20deg);
+          transform: translate3d(0, 0, 400px) rotateY(-20deg);
+}
+
+article .cenalign .moved.hid p {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 0, 400px) rotateY(20deg);
+          transform: translate3d(0, 0, 400px) rotateY(20deg);
+}
+/*# sourceMappingURL=page4.css.map */

@@ -1,0 +1,58 @@
+@import 'config';
+
+.body {
+  margin: 0;
+  padding: 0;
+}
+aside,
+section {
+  float: left;
+}
+
+aside {
+  width: 200px;
+  .box {
+    height: 200px;
+    font-size: 2em;
+    line-height: 200px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    background: $box-bg;
+    transition: 0.5s;
+    &:hover {
+      background-color: $box-bg-hover;
+      color: white;
+      cursor: pointer;
+    }
+  }
+  .ch_bg {
+    background: $box-bg-active;
+    color: white;
+  }
+}
+
+/*///////this is slide left///////*/
+section {
+  background: #ddd;
+  overflow: hidden;
+  width: 480px;
+  height: 600px;
+  .float-container {
+    width: 480px * 3;
+    .content {
+      position: relative; //need position for setting 'left' in js
+      float: left;
+      width: 480px;
+      height: 600px;
+      background-color: #f60;
+    }
+    .yel {
+      background-color: yellow;
+    }
+    .pink {
+      background-color: pink;
+    }
+  }
+}

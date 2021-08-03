@@ -1,0 +1,63 @@
+$main-padding: 20px;
+
+@mixin mediaPad {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin mediaPC {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+////////////////////////
+
+@include mediaPad {
+  main nav {
+    // padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul li {
+      float: left;
+      a {
+        border-bottom: solid 0px #fff;
+      }
+    }
+  }
+  main aside {
+    flex: 0.4 300px;
+  }
+  main section {
+    flex: 0.6 300px;
+  }
+}
+
+@include mediaPC {
+  main nav {
+    flex: 1;
+    padding: 10px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul {
+      align-self: flex-start;
+      width: 100%;
+      padding: $main-padding;
+      li {
+        float: none;
+        display: block;
+        border-bottom: solid 1px #fff;
+      }
+    }
+  }
+  main aside {
+    flex: 1;
+  }
+  section {
+    flex: 2;
+  }
+}

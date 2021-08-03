@@ -1,0 +1,85 @@
+@charset "utf-8";
+$main-padding: 20px;
+
+//////////////////////////////////////////////////
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, sans-serif;
+}
+main {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  // width: 100%;
+
+  /*header*/
+  header {
+    width: 100%;
+    background: #c0c0b0;
+    text-align: center;
+    padding: $main-padding;
+  }
+
+  /*nav*/
+  nav {
+    background: #468263;
+    width: 100%;
+    // align-self: center;
+    text-align: center;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      a {
+        display: block;
+        padding: 10px 30px;
+        border-bottom: solid 1px #fff;
+        font-weight: bold;
+        text-decoration: none;
+        color: #fff;
+        &:hover {
+          background: #fff;
+          color: #468263;
+        }
+      }
+    }
+  }
+
+  /*aside*/
+  aside {
+    width: 100%;
+    background: #c0c0b0;
+    img {
+      width: 100%;
+    }
+    // .img {
+    //   width: 100%;
+    //   height: 100%;
+    //   background: url('../images/s2.jpg') no-repeat;
+    //   background-size: cover;
+    // }
+  }
+
+  /*section*/
+  section {
+    width: 100%;
+    color: #fff;
+    background: #731509;
+    line-height: 2em;
+    p {
+      box-sizing: border-box;
+      padding: 10px 30px;
+    }
+  }
+
+  /*footer*/
+  footer {
+    width: 100%;
+    text-align: center;
+    padding: $main-padding;
+  }
+}
+
+@import 'mediaQuery';

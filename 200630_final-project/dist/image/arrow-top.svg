@@ -1,0 +1,11 @@
+<svg id="arrow-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.5 38.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231815;
+      }
+    </style>
+  </defs>
+  <title>arr0w-top</title>
+  <path id="arrow-top-2" data-name="arrow-top" class="cls-1" d="M23.82,11.57,13.57,1.19h0a1.5,1.5,0,0,0-2.12,0h0L1.18,11.57a1.5,1.5,0,0,0,2.14,2.11L11,5.9V37.75a1.5,1.5,0,0,0,3,0V5.9l7.68,7.78a1.53,1.53,0,0,0,1.07.44,1.48,1.48,0,0,0,1.05-.43A1.5,1.5,0,0,0,23.82,11.57Z" transform="translate(-0.75 -0.75)"/>
+</svg>

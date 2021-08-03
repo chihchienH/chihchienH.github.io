@@ -1,0 +1,81 @@
+// (min-width: 769px) and (max-width: 1280px)
+@include mediaLg {
+  .section-container {
+    display: block;
+
+    //////----- Side Info -----//////
+    .side-info {
+      padding: unset;
+      width: 100%;
+      background-color: unset;
+      display: grid;
+      grid-template-columns: 380px auto;
+      grid-template-rows: 130px 125px;
+      // remove flex-col-between, JS
+
+      .head {
+        padding: 12px 28px;
+        height: 100%;
+        background-color: $secondary-bgcolor;
+        // add flex-row-between, JS
+
+        &-img {
+          width: 100px;
+          height: 100px;
+        }
+        &-title {
+          width: 200px;
+          text-align: left;
+          line-height: 30px;
+        }
+      }
+
+      .side-nav {
+        margin: unset;
+        padding-right: 135px;
+        height: initial;
+        background-color: $secondary-bgcolor;
+        display: flex;
+        justify-content: flex-end;
+
+        &-box {
+          border: none;
+          padding: unset;
+          padding-top: 38px;
+          width: 480px;
+          // add flex-row-between, JS
+        }
+
+        &-list.current {
+          position: relative;
+          &::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            transform: translateY(-50%);
+            width: 95%;
+            border: 3.5px solid $current-color-dark;
+          }
+        }
+      }
+
+      .side-description {
+        padding: 36px 135px 20px;
+        height: 100%;
+        grid-column: 1 / span 2;
+        align-items: flex-end;
+        // add flex-row-between, JS
+
+        &-text {
+          width: 500px;
+        }
+
+        &-tag {
+          width: 338px;
+          height: 24px;
+          // add flex-row-between, JS
+        }
+      }
+    }
+  }
+}
